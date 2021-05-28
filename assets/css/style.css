@@ -1,0 +1,49 @@
+/* Common */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+main {
+  height: 100vh;
+}
+h3 {
+  color: white;
+  text-transform: uppercase;
+  padding: 11px;
+}
+p {
+  color: #808080;
+}
+
+/** Main Style */
+/* Nav style */
+nav {
+  background-color: #2e3a46;
+  padding: 0.5rem 1rem;
+}
+nav > img {
+  height: 40px;
+}
+
+/* Gallery style */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #1e2d3b;
+  padding-top: 40px;
+}
+.album_card {
+  padding: 10px;
+  flex-basis: 180px;
+  background-color: #2e3a46;
+  text-align: center;
+  margin: 10px;
+}
+.poster {
+  width: 150px;
+}
