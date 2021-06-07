@@ -6,6 +6,7 @@
 }
 body {
   font-family: "Roboto", sans-serif;
+  background-color: #1e2d3b;
 }
 main {
   height: 100vh;
@@ -22,11 +23,18 @@ p {
 /** Main Style */
 /* Nav style */
 nav {
+  display: flex;
   background-color: #2e3a46;
   padding: 0.5rem 1rem;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
 }
 nav > img {
   height: 40px;
+}
+.select_genre {
+  color: white;
 }
 
 /* Gallery style */
@@ -34,7 +42,7 @@ nav > img {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  background-color: #1e2d3b;
+
   padding-top: 40px;
 }
 .album_card {

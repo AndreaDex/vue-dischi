@@ -10,6 +10,9 @@ const app = new Vue({
     orderedDisc() {
       return _.orderBy(this.discs, "year");
     },
+    filterGenre() {
+      return _.filter(this.discs, { genre: this.selected });
+    },
   },
   mounted() {
     axios
