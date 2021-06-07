@@ -17,8 +17,8 @@
           <img src="./assets/img/logo.png" alt="" />
           <div class="select_genre">
             <label for="genere">Scegli un genere:</label>
-            <select name="genere" id="genere" v-model="selected" @change="filterGenre">
-              <option disabled value="">Genere</option>
+            <select name="genere" id="genere" v-model="selected" >
+              <option value="">All</option>
               <option value="Rock">Rock</option>
               <option value="Pop">Pop</option>
               <option value="Metal">Metal</option>
@@ -28,7 +28,7 @@
           
         </nav>
         <div class="gallery">
-         <div class="album_card" v-for="disc in orderedDisc"  >
+         <div class="album_card" v-for="disc in orderedDisc" v-if="disc.genre == selected || selected == '' "  >
              <img class="poster" :src="disc.poster" alt="">
             <h3> {{disc.title}}</h3>
             <p>{{disc.author}}</p>
